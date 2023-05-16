@@ -1,4 +1,4 @@
-## BASIC REST API USING RUBY ON RAILS
+## BASIC REST API USING RUBY ON RAILS - GUNTUR AJI PRATAMA
 
 ![Ruby_On_Rails_Logo](https://github.com/gunturajip/ruby-todo-webservice/assets/40670734/c610cf53-0eed-4399-83ce-015ae3bcb56f)
 
