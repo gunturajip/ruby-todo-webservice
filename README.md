@@ -125,7 +125,7 @@ Things you may want to cover:
         }
     ```
 
-- GET All Todos:
+- GET All Todos (by pagination):
     - Endpoint:
     ```
         http :3000/todos page==1 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0
@@ -473,7 +473,7 @@ Things you may want to cover:
             }
         ]
     ```
-- GET Detail Todo:
+- GET a Todo:
     - Endpoint:
     ```
         http :3000/todos/2 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -514,7 +514,7 @@ Things you may want to cover:
             "updated_at": "2023-05-16T00:33:19.614Z"
         }
     ````
-- POST Todo:
+- POST a Todo:
     - Endpoint:
     ```
         http POST :3000/todos title=Supatak created_by=1 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -547,7 +547,7 @@ Things you may want to cover:
         }
     ```
 
-- PUT Todo:
+- PUT a Todo:
     - Endpoint:
     ```
         http PUT :3000/todos/2 title='Guntur Aji' Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -566,7 +566,7 @@ Things you may want to cover:
         X-Runtime: 0.041398
         X-XSS-Protection: 0
     ```
-- DELETE Todo:
+- DELETE a Todo:
     - Endpoint:
     ```
         http DELETE :3000/todos/10 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -586,7 +586,7 @@ Things you may want to cover:
         X-XSS-Protection: 0
     ```
 
-- GET Items Todo:
+- GET All Items of a Todo:
     - Endpoint:
     ```
         http :3000/todos/2/items Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -629,7 +629,7 @@ Things you may want to cover:
         ]
     ```
 
-- GET Item Todo:
+- GET an Item of a Todo:
     - Endpoint:
     ```
         http :3000/todos/2/items/1 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -662,7 +662,7 @@ Things you may want to cover:
         }
     ```
 
-- POST Item Todo:
+- POST an Item of a Todo:
     - Endpoint:
     ```
         http POST :3000/todos/2/items name='Listen to Sukucing' Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -712,7 +712,7 @@ Things you may want to cover:
         }
     ```
 
-- PUT Item Todo:
+- PUT an Item of a Todo:
     - Endpoint:
     ```
         http PUT :3000/todos/2/items/1 name='Listen to Sugandhi' Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
@@ -732,7 +732,7 @@ Things you may want to cover:
         X-XSS-Protection: 0
     ```
 
-- DELETE Item Todo:
+- DELETE an Item of a Todo:
     - Endpoint:
     ```
         http DELETE :3000/todos/2/items/1 Accept:'application/vnd.todos.v1+json' Authorization:'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzMjAzMjF9.mF6h9VBU22yFm_gADK6P_y6f9Jyz8At7Rd6S_EqaCI0'
