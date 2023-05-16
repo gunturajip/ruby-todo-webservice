@@ -147,7 +147,7 @@ Explanation:
 | PUT    | `/todos/:todo_id/items/:item_id`       | Update a specific item     |
 | DELETE | `/todos/:todo_id/items/:item_id`       | Delete a specific item     |
 
-### REST API FLOW (USING HTTPIE)
+### REST API DETAILS (USING HTTPIE)
 
 - POST Signup User:
     - Endpoint:
