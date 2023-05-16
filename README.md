@@ -1,4 +1,4 @@
-## COMPLETE GUIDE TO CREATE BASIC REST API USING RUBY, RAILS, AND POSTGRESQL
+## COMPLETE GUIDE TO CREATE BASIC REST API USING RUBY ON RAILS
 
 ### ABOUT RUBY ON RAILS
 
@@ -98,6 +98,8 @@ These are the fundamental concepts and components that make up the Rails 7 frame
 - Enjoy your backend development using WSL :)
 
 ### DATA FLOW OVERVIEW
+
+![Untitled-2022-11-12-0924](https://github.com/gunturajip/ruby-todo-webservice/assets/40670734/7d37805e-a873-4435-8642-be5eaf97d600)
 
 Explanation:
 - First of all, a user will send a request to system with / without any parameters / inputs
