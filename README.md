@@ -1,27 +1,12 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
 ## COMPLETE GUIDE TO CREATE BASIC REST API USING RUBY, RAILS, AND POSTGRESQL
+
+### STARTING THE PROJECT
+
+[Follow this steps first if you have not setup the environment](#install-wsl-for-developing-backend-web-using-rails-5)
+
+- Clone this repository and with your favourite Text Editor
+- Open Terminal and type ```bundle install``` to install all dependecies needed to run the project
+- Enjoy the API endpoints (begin with signup and login user)
 
 ### INSTALL WSL FOR DEVELOPING BACKEND WEB USING RAILS 5
 
@@ -67,6 +52,35 @@ Things you may want to cover:
     (DONE INSTALLING HTTPIE AS A HTTP CLIENT FOR SENDING REQUEST JUST LIKE POSTMAN)
 ```
 - Enjoy your backend development using WSL :)
+
+### API ENDPOINTS
+
+## Users
+
+| Method | Endpoint          | Description                       |
+| ------ | ----------------- | --------------------------------- |
+| POST   | `/signup`         | Register a new user               |
+| POST   | `/auth/login`     | Login user                        |
+
+### Todos
+
+| Method | Endpoint              | Description                 |
+| ------ | --------------------- | --------------------------- |
+| POST   | `/todos`              | Create a new todo           |
+| GET    | `/todos`              | Get a list of todos         |
+| GET    | `/todos/:todo_id`     | Get a specific todo         |
+| PUT    | `/todos/:todo_id`     | Update a specific todo      |
+| DELETE | `/todos/:todo_id`     | Delete a specific todo      |
+
+### Items
+
+| Method | Endpoint                               | Description                |
+| ------ | -------------------------------------- | -------------------------- |
+| POST   | `/todos/:todo_id/items/`               | Create a new item          |
+| GET    | `/todos/:todo_id/items/`               | Get a list of items        |
+| GET    | `/todos/:todo_id/items/:item_id`       | Get a specific item        |
+| PUT    | `/todos/:todo_id/items/:item_id`       | Update a specific item     |
+| DELETE | `/todos/:todo_id/items/:item_id`       | Delete a specific item     |
 
 ### REST API FLOW (USING HTTPIE)
 
@@ -473,6 +487,7 @@ Things you may want to cover:
             }
         ]
     ```
+
 - GET a Todo:
     - Endpoint:
     ```
@@ -514,6 +529,7 @@ Things you may want to cover:
             "updated_at": "2023-05-16T00:33:19.614Z"
         }
     ````
+
 - POST a Todo:
     - Endpoint:
     ```
@@ -566,6 +582,7 @@ Things you may want to cover:
         X-Runtime: 0.041398
         X-XSS-Protection: 0
     ```
+
 - DELETE a Todo:
     - Endpoint:
     ```
