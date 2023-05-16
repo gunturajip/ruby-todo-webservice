@@ -1,5 +1,7 @@
 ## COMPLETE GUIDE TO CREATE BASIC REST API USING RUBY ON RAILS
 
+![Ruby_On_Rails_Logo](https://github.com/gunturajip/ruby-todo-webservice/assets/40670734/c610cf53-0eed-4399-83ce-015ae3bcb56f)
+
 ### ABOUT RUBY ON RAILS
 
 Ruby on Rails (often referred to as Rails) is a popular web application framework written in the Ruby programming language. Rails follows the Model-View-Controller (MVC) architectural pattern, which separates an application into three main components: the model, the view, and the controller.
