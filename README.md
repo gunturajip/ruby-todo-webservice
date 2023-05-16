@@ -1,5 +1,49 @@
 ## COMPLETE GUIDE TO CREATE BASIC REST API USING RUBY, RAILS, AND POSTGRESQL
 
+### ABOUT RUBY ON RAILS
+
+Ruby on Rails (often referred to as Rails) is a popular web application framework written in the Ruby programming language. Rails follows the Model-View-Controller (MVC) architectural pattern, which separates an application into three main components: the model, the view, and the controller.
+
+Here's a high-level overview of how Rails 7 framework works:
+
+- Model:
+Models represent the data and logic of your application. They interact with the database and handle data validation, associations, and business logic.
+Rails uses an Object-Relational Mapping (ORM) tool called ActiveRecord, which provides an easy and intuitive way to work with databases. It abstracts the database interactions, allowing you to define your models and their associations using Ruby classes.
+Models typically have attributes that map to database columns, and they can also define relationships with other models (one-to-one, one-to-many, many-to-many).
+Rails provides convenient methods and conventions for querying and manipulating data using ActiveRecord.
+
+- View:
+Views are responsible for presenting the application's user interface. They display data to users and handle user interactions.
+Rails uses a templating system called ERB (Embedded Ruby) by default, which allows you to embed Ruby code within HTML templates.
+Views can access data provided by the controller and display it in a structured manner using HTML, CSS, and JavaScript.
+Rails provides view helpers that simplify common tasks, such as generating forms, rendering partials, or handling URLs.
+
+- Controller:
+Controllers handle the incoming HTTP requests, perform the required actions, and prepare the data to be displayed in the views.
+When a request is received, Rails routes it to the appropriate controller action based on the URL and HTTP verb.
+Controllers retrieve data from the models, process it, and store it in instance variables accessible to the views.
+Controllers also handle user input, validate data, and initiate changes in the model or other parts of the system.
+After processing the request, controllers render a view or redirect to another page.
+
+- Routing:
+Rails has a powerful routing system that maps URLs to specific controller actions.
+The config/routes.rb file defines the application's routes, including URL patterns and the corresponding controller actions.
+Routes can be configured to handle different HTTP verbs (GET, POST, PUT, DELETE) and accept parameters from the URL.
+Rails generates helper methods that simplify generating URLs and paths within the application.
+
+- Middleware:
+Rails incorporates a middleware stack that sits between the web server and the application.
+Middleware components can intercept requests and responses, perform actions, modify data, or add additional functionality.
+Examples of middleware include handling session management, CSRF protection, logging, caching, and more.
+Middleware can be added or customized to meet specific application requirements.
+
+- Active Support:
+Active Support is a core Rails component that provides a collection of utility classes, extensions, and helpers.
+It offers numerous functionalities like date and time manipulation, string manipulation, caching, internationalization support, and much more.
+
+Active Support enriches the Ruby language and simplifies common programming tasks in Rails applications.
+These are the fundamental concepts and components that make up the Rails 7 framework. Rails promotes convention over configuration, meaning it provides sensible defaults and follows established patterns, allowing developers to focus on application logic rather than repetitive boilerplate code. It also emphasizes the principle of "Don't Repeat Yourself" (DRY) to reduce duplication and increase maintainability.
+
 ### STARTING THE PROJECT
 
 [Follow this steps first if you have not setup the environment](#install-wsl-for-developing-backend-web-using-rails-5)
