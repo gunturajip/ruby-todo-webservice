@@ -97,6 +97,23 @@ These are the fundamental concepts and components that make up the Rails 7 frame
 ```
 - Enjoy your backend development using WSL :)
 
+### DATA FLOW OVERVIEW
+
+Explanation:
+- First of all, a user will send a request to system with / without any parameters / inputs
+- Second, the system will check whether the user access is authorized or not
+  - If authorized, then the request can be delivered to the next step of the flow
+  - If not authorized, then there will be a response sent to the user stated that the user is not authorized and need to be authorized first to be able to continue sending the request
+- Third, the system will check whether the request has valid parameters or not
+  - If parameters are valid, then the request can be delivered to the next step of the flow
+  - If parameters are invalid, then there will be a response sent to the user stated that the user has invalid request parameters and need to fix the parameter with the rules to be valid parameters
+- Fourth, the system will send the request into the database integrated with the system and check whether the requested data is found or not
+  - If found data, then there will be a response sent to the user stating the requested data or a single message related to the request
+    - If the request is about GET, data will be sent to the user as requested
+    - If the request is about POST, a message of successful data insertion based on parameters passed by the user will be sent to the user as requested
+    - If the request is about PUT or DELETE, a message of successful data update or deletion based on parameters passed by the user will be sent to the user as requested
+  - If not found data, then there will be a response sent to the user stating a single message of data not found
+
 ### API ENDPOINTS
 
 ## Users
