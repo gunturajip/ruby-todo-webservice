@@ -120,14 +120,14 @@ Explanation:
 
 ### API ENDPOINTS
 
-## Users
+#### Users
 
 | Method | Endpoint          | Description                       |
 | ------ | ----------------- | --------------------------------- |
 | POST   | `/signup`         | Register a new user               |
 | POST   | `/auth/login`     | Login user                        |
 
-### Todos
+#### Todos
 
 | Method | Endpoint              | Description                 |
 | ------ | --------------------- | --------------------------- |
@@ -137,7 +137,7 @@ Explanation:
 | PUT    | `/todos/:todo_id`     | Update a specific todo      |
 | DELETE | `/todos/:todo_id`     | Delete a specific todo      |
 
-### Items
+#### Items
 
 | Method | Endpoint                               | Description                |
 | ------ | -------------------------------------- | -------------------------- |
