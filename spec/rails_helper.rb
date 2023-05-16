@@ -43,8 +43,9 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 RSpec.configure do |config|
-  # add `RequestSpecHelper` method
-  config.include RequestSpecHelper, type: :request
+  # add `RequestSpecHelper` and `ControllerSpecHelper` method
+  config.include RequestSpecHelper
+  config.include ControllerSpecHelper
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
